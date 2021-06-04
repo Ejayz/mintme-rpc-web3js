@@ -1,0 +1,12 @@
+# Web3 configuration #
+
+nodeRCP = 'http://localhost:39573'
+
+# Contract address erc20 #
+
+contract = '0x6CDEb9BF6F73D36f721ab6EFBFA35fa003CEF563'
+
+# Address from which tokens will be sent #
+
+senderAddress = '0xF92bdED95895cF2aD5Da5Ecb1a127e3f87E1c4cE'
+senderPrivateKey = '7e9a5700bc59f4b2f0c593ce91f218b2b70e57905f6814f3be4170ee136a271c'

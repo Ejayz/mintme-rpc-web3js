@@ -1,0 +1,6 @@
+{
+    "rpc_url": "https://node1.mintme.com",
+    "senderPrivateKey": "Your Private Key",
+    "senderAddress": "Your address",
+    "password": "Wallet password"
+}
