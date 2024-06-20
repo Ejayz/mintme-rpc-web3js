@@ -1,24 +1,34 @@
 {
-  "name": "node",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mintme-rpc-web3js",
+  "version": "1.0.1",
+  "description": "Mintme rpc for sending transaction via web3Js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Walledgarden/highpay-pool-web3-wallet.git"
+    "url": "git@github.com:Ejayz/mintme-rpc-web3js.git"
   },
-  "author": "",
+  "author": "Ejayz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Walledgarden/highpay-pool-web3-wallet/issues"
+    "url": "https://github.com/Ejayz/mintme-rpc-web3js/issues"
   },
-  "homepage": "https://github.com/Walledgarden/highpay-pool-web3-wallet#readme",
+  "homepage": "https://github.com/Ejayz/mintme-rpc-web3js",
   "dependencies": {
     "ethereumjs-common": "^1.5.2",
     "ethereumjs-tx": "^2.1.2",
     "web3": "^1.3.6"
-  }
+  },
+  "keywords": [
+    "web3js",
+    "web3",
+    "mintme",
+    "rpc",
+    "mintme",
+    "rpc",
+    "web3",
+    "mintme"
+  ]
 }
