@@ -8,10 +8,10 @@ const web3 = require("path/to/index.js");
 
 ## Environment Variables Example
 
-rpc_url= "Mintme RPC Url"
-senderPrivateKey= "Your Private Key"
-senderAddress= "Your address"
-password= "Wallet password"
+> rpc_url= "Mintme RPC Url"
+> senderPrivateKey= "Your Private Key"
+> senderAddress= "Your address"
+> password= "Wallet password"
 
 ## Method List
 > This are the available method you can use in index.js 
