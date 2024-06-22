@@ -1,8 +1,19 @@
 const web3 = require("web3");
 var Tx = require("ethereumjs-tx").Transaction;
 const Common = require('ethereumjs-common').default;
-var conf = require("./config/conf.json");
+// var conf = require("./config/conf.json");
 const fs = require("fs");
+
+const dotenv = require('dotenv');
+dotenv.config();
+
+const rpc_url= process.env.RPC_URL;
+//Assign sender address
+const senderAddress= process.env.SENDER_ADDRESS;
+const senderPrivateKey= process.env.SENDER_PRIVATE_KEY;
+const password= process.env.PASSWORD;
+
+
 // Blockchain configuration for the transfer.
 const customCommon = Common.forCustomChain(
 	'mainnet',
@@ -17,11 +28,10 @@ const customCommon = Common.forCustomChain(
 const abi = fs.readFileSync("./utils/ERC20.json");
 const ABI = JSON.parse(abi);
 //Connect to mintme node 
-const node = new web3(conf.rpc_url);
-//Assign sender address
-const senderAddress = conf.senderAddress;
+const node = new web3(rpc_url);
+
 // Sender private key in hexadecimal
-var privateKeyHex = Buffer.from(conf.senderPrivateKey, "hex");
+var privateKeyHex = Buffer.from( senderPrivateKey, "hex");
 async function sendMintme(address, amount) {
 
 	//get and check balance 
