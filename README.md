@@ -27,5 +27,5 @@ const web3 = require("path/to/index.js");
 |getTransactionInfo(32bytes hash)|Promise:Json Data|Y|
 |generateString(void)|Random String 32 character string|Y|
 |amountMintmeCalculator(double amount)|Int 18 digit gwie converted amount|Y|
-
+|getTransactionReceipt(string transactionHash)|Promise:Json Data|Y|
 > More info will be updated here ! 
