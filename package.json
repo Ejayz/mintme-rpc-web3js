@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/Ejayz/mintme-rpc-web3js",
   "dependencies": {
+    "@ethereumjs/common": "^4.3.0",
+    "@ethereumjs/tx": "^5.3.0",
     "dotenv": "^16.4.5",
-    "ethereumjs-common": "^1.5.2",
-    "ethereumjs-tx": "^2.1.2",
     "web3": "^4.10.0"
   },
   "keywords": [

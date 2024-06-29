@@ -1,6 +1,6 @@
 const { Web3 } = require("web3");
-var Tx = require("ethereumjs-tx").Transaction;
-const Common = require("ethereumjs-common").default;
+var Tx = require("@ethereumjs/tx");
+const { Common, Chain, Hardfork } = require('@ethereumjs/common')
 // var conf = require("./config/conf.json");
 const fs = require("fs");
 
@@ -14,15 +14,13 @@ const senderPrivateKey = process.env.senderPrivateKey;
 const password = process.env.PASSWORD;
 
 // Blockchain configuration for the transfer.
-const customCommon = Common.forCustomChain(
-  "mainnet",
-  {
-    name: "MINTME",
-    networkId: 37129,
-    chainId: 24484,
-  },
-  "petersburg"
-);
+const customCommon = new Common({
+  chain: Chain.Mainnet,
+  hardfork: Hardfork.Petersburg,
+  name: "MINTME",
+  networkId: 37129,
+  chainId: 24484,
+});
 // Contracr ERC20 Default ABI
 const abi = fs.readFileSync("./utils/ERC20.json");
 const ABI = JSON.parse(abi);
