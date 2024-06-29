@@ -1,3 +1,5 @@
+![image](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
 ## Documentation on how to use index.js
 
 
