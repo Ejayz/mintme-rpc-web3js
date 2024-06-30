@@ -1,6 +1,6 @@
 {
   "name": "mintme-rpc-web3js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Mintme rpc for sending transaction via web3Js",
   "main": "index.js",
   "scripts": {
